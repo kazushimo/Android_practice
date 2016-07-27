@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context="com.example.kanehiro_acer.commnicationtool.MainActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   <RelativeLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:scrollbarAlwaysDrawVerticalTrack="true"
+       >
+
+    <ImageView
+        android:id = "@+id/image_view"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:src = "@mipmap/ic_launcher"
+        android:contentDescription="@string/app_name"
+        />
+
+    <TextView
+        android:id="@+id/Label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名前"
+        android:layout_below="@id/image_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/Label_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自己紹介"
+        android:layout_below="@id/Label_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image_view"
+        android:layout_marginTop="20dp"
+        android:visibility = "visible"
+        />
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/image_view"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@id/displayName"
+        android:inputType="text"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/displayIntro"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/displayName"
+        android:layout_marginTop="25dp"
+        android:visibility = "visible"
+        />
+
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/displayName"
+        android:layout_alignStart="@id/displayName"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/Edit_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="編集"
+        android:layout_below="@id/image_view"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/Fin_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完了"
+        android:layout_below="@id/Edit_Btn"
+        android:layout_alignEnd="@id/Edit_Btn"
+
+        android:visibility="visible" />
+   </RelativeLayout>
+
+   </ScrollView>
+
+</LinearLayout>
